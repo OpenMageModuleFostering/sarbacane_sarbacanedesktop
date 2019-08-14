@@ -1,0 +1,105 @@
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    Sarbacane
+ * @package     Sarbacane_Sarbacanedesktop
+ * @author      Sarbacane Software <contact@sarbacane.com>
+ * @copyright   2015 Sarbacane Software
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+
+#sarbacanedesktop{width:900px;margin:auto;overflow:hidden;padding-bottom:170px;}
+#sarbacanedesktop *{font-size:13px;color:#4C5261;line-height:22px;}
+#sarbacanedesktop p, #sarbacanedesktop form p{margin:0 0 8.5px;padding:0;}
+#sarbacanedesktop a{color:#f06800;}
+#sarbacanedesktop .sd_header{padding-top:20px;padding-bottom:20px;}
+#sarbacanedesktop .sd_logo_sarbacane, #sarbacanedesktop .sd_logo_mailify, #sarbacanedesktop .sd_picto1, #sarbacanedesktop .sd_picto2, #sarbacanedesktop .sd_picto3, #sarbacanedesktop .sd_picto4, #sarbacanedesktop .sd_info_container_left > div > div > p, #sarbacanedesktop .sd_info_line,#sarbacanedesktop .sd_step_line, #sarbacanedesktop .sd_step2_info, #sarbacanedesktop .sd_info_container_right{background-repeat:no-repeat;background-image:url('images/sarbacanedesktop.png');}
+#sarbacanedesktop .sd_logo_sarbacane{margin:auto;width:318px;height:45px;background-position:-150px -99px;}
+#sarbacanedesktop .sd_logo_mailify{margin:auto;width:192px;height:55px;background-position:-469px -98px;}
+#sarbacanedesktop .sd_separator{border-top:1px solid #ebedf2;padding-bottom:5px;margin-top:5px;}
+#sarbacanedesktop .sd_title{font-size:23px;text-align:center;}
+#sarbacanedesktop .sd_title_separator_page, #sarbacanedesktop .sd_title_separator_account_offer{border-top:2px solid #f06800;width:75px;margin:auto;}
+#sarbacanedesktop .sd_title_separator_account_offer{margin-top:15px;padding-bottom:20px;}
+#sarbacanedesktop .sd_title_separator_page{margin-top:25px;padding-bottom:35px;}
+#sarbacanedesktop .sd_picto1, #sarbacanedesktop .sd_picto2, #sarbacanedesktop .sd_picto3, #sarbacanedesktop .sd_picto4{width:72px;height:72px;margin-bottom:20px;}
+#sarbacanedesktop .sd_picto1{background-position: 0px 0px;}
+#sarbacanedesktop .sd_picto2{background-position: -73px 0px;}
+#sarbacanedesktop .sd_picto3{background-position: 0px -73px;}
+#sarbacanedesktop .sd_picto4{background-position: -73px -73px;}
+#sarbacanedesktop .sd_long_subtitle{font-size:16px;width:150px;}
+#sarbacanedesktop .sd_short_subtitle{font-size:16px;width:120px;}
+#sarbacanedesktop .sd_subtitle_separator{border-top:2px solid #f06800;width:75px;margin-top:15px;padding-bottom:20px;}
+#sarbacanedesktop .sd_video_config_container{overflow:hidden;padding-bottom:10px;}
+#sarbacanedesktop .sd_video_container{float:left;width:610px;}
+#sarbacanedesktop .sd_config_container{float:left;width:270px;}
+#sarbacanedesktop .sd_config_container p{font-weight:bold;font-size:15px;line-height:25px;}
+#sarbacanedesktop .sd_config_container .sd_config_button{display:block;padding:7px;width:100%;background:#78a13a;text-align:center;cursor:pointer;margin-top:20px;color:white;text-decoration:none;border:none;}
+#sarbacanedesktop .sd_detail_description_container{overflow:hidden;padding-bottom:55px;padding-top:25px;}
+#sarbacanedesktop .sd_detail_description_container > div{overflow:hidden;}
+#sarbacanedesktop .sd_detail_description_container > div > div{float:left;width:225px;}
+#sarbacanedesktop .sd_detail_description_container > div > div > div{padding:0px 15px;}
+#sarbacanedesktop p.sd_info_title{font-weight:bold;font-size:15px;padding-bottom:10px;}
+#sarbacanedesktop .sd_info_container{overflow:hidden;padding-top:30px;}
+#sarbacanedesktop .sd_info_container *{font-size:14px;}
+#sarbacanedesktop .sd_info_container_left{float:left;width:620px;}
+#sarbacanedesktop .sd_info_container_right{float:left;width:270px;background-position:-678px -101px;}
+#sarbacanedesktop .sd_info_container_left > div{padding:0px 30px;}
+#sarbacanedesktop .sd_info_container_right > div{padding-left:30px;}
+#sarbacanedesktop .sd_info_container_left > div > div > p{padding-left:35px;background-position:-680px -50px;}
+#sarbacanedesktop .sd_account_offer_container{padding-top:60px;}
+#sarbacanedesktop .sd_account{color:#5b8217;font-weight:bold;font-size:19px;text-align:center;}
+#sarbacanedesktop .sd_offer{text-transform:uppercase;font-weight:bold;text-align:center;color:#9c9898;font-size:14px;}
+#sarbacanedesktop #sd_step{height:100px;}
+#sarbacanedesktop .sd_step{background:#404040;padding-top:50px;display:none;}
+#sarbacanedesktop .sd_show_step{display:block;}
+#sarbacanedesktop .sd_step *{color:white;}
+#sarbacanedesktop .sd_step .sd_step_buttons a {color: #f06800;text-decoration:underline;}
+#sarbacanedesktop .sd_step_title{font-size:28px;text-align:center;}
+#sarbacanedesktop .sd_step_line{width:529px;height:32px;margin:auto;margin-top:55px;margin-bottom:30px;}
+#sarbacanedesktop #sd_step1 .sd_step_line{background-position:-147px 2px;}
+#sarbacanedesktop #sd_step2 .sd_step_line{background-position:-147px -30px;}
+#sarbacanedesktop #sd_step3 .sd_step_line{background-position:-147px -61px;}
+#sarbacanedesktop .sd_step_buttons{background:#363636;padding:15px;overflow:hidden;}
+#sarbacanedesktop .sd_step_buttons_left{float:left;width:340px;text-align:left;}
+#sarbacanedesktop .sd_step_buttons_right{float:right;width:340px;text-align:right;}
+#sarbacanedesktop .sd_step3_right{float:right;width:340px;text-align:right;padding-top:10px;}
+#sarbacanedesktop .sd_step_buttons input[type="button"], #sarbacanedesktop .sd_step_buttons input[type="submit"], #sarbacanedesktop input[type="submit"].sd_key_button, #sarbacanedesktop .sd_button{color:white;padding:10px 20px;border:none;cursor:pointer;}
+#sarbacanedesktop .sd_step_buttons .sd_step_buttons_left input[type="button"], #sarbacanedesktop input[type="submit"].sd_key_button{background:#808080;}
+#sarbacanedesktop .sd_step_buttons .sd_step_buttons_right input[type="submit"], #sarbacanedesktop .sd_button{background:#78a13a;}
+#sarbacanedesktop .sd_step1_instruction, #sarbacanedesktop .sd_step2_instruction{font-size:16px;text-align:center;}
+#sarbacanedesktop .sd_step1_selection{padding:10px 0px;text-align:center;}
+#sarbacanedesktop .sd_step1_selection span{padding:0 20px;}
+#sarbacanedesktop .sd_step1_selection label{font-size:16px;font-weight:normal;}
+#sarbacanedesktop .sd_step1_button{visibility:hidden;}
+#sarbacanedesktop .sd_step2_selection{padding-bottom:45px;}
+#sarbacanedesktop .sd_step2_selection_list{width:530px;margin:auto;}
+#sarbacanedesktop .sd_step2_selection_shop_title{font-size:16px;padding-top:20px;padding-bottom:5px;border-bottom:1px solid #636363;}
+#sarbacanedesktop .sd_step2_selection_shop{overflow:hidden;padding:3px 0px;}
+#sarbacanedesktop .sd_step2_selection_shop_option{overflow:hidden;padding-left:25px;}
+#sarbacanedesktop .sd_step2_selection_shop_option .sd_step2_selection_shop_text{float:left;width:auto;}
+#sarbacanedesktop .sd_step2_info{float:left;width:19px;height:19px;margin-left:10px;cursor:pointer;background-position:-682px 0;}
+#sarbacanedesktop .sd_step2_selection_shop_input{float:left;width:25px;}
+#sarbacanedesktop .sd_step2_selection_shop_text{float:left;width:475px;}
+#sarbacanedesktop .sd_step3_instruction{width:750px;margin:auto;}
+#sarbacanedesktop .sd_step3_instruction a{text-decoration:underline;}
+#sarbacanedesktop .sd_step3_instruction .sd_key_button_container{text-align:right;padding-top:30px;padding-bottom:50px;}
+#sarbacanedesktop .sd_step3_instruction p, #sarbacanedesktop .sd_step3_instruction a{font-size:16px;}
+#sarbacanedesktop .sd_key_container{padding-top:15px;}
+#sarbacanedesktop .sd_key_container input{cursor:auto;color:black;width:732px;line-height:35px;height:35px;background-color:#dff0d8;border:1px solid #5aab13;padding:0px 8px;border-radius:0px;box-sizing:content-box;box-shadow:none;}
+#sarbacanedesktop label{width:auto;padding:0;float:none;margin:0;display:inline;text-shadow:none;}
+#sarbacanedesktop input{vertical-align:baseline;margin:0;padding:0;}
+#sarbacanedesktop .sd_tooltip{position:relative;display:none;}
+#sarbacanedesktop .sd_tooltip_show{display:block;}
+#sarbacanedesktop .sd_tooltip *{font-size:11px;line-height:13px;}
+#sarbacanedesktop .sd_tooltip div{background:#858585;border:1px solid white;position:absolute;right:15px;width:360px;bottom:25px;padding:20px;}
+#sarbacanedesktop .sd_hidden{display:none;}

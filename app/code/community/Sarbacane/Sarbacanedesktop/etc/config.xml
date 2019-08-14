@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    Sarbacane
+ * @package     Sarbacane_Sarbacanedesktop
+ * @author      Sarbacane Software <contact@sarbacane.com>
+ * @copyright   2015 Sarbacane Software
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Sarbacane_Sarbacanedesktop>
+            <version>1.0.0.8</version>
+        </Sarbacane_Sarbacanedesktop>
+    </modules>
+    <frontend>
+        <routers>
+            <sarbacanedesktop>
+                <use>standard</use>
+                <args>
+                    <module>Sarbacane_Sarbacanedesktop</module>
+                    <frontName>sarbacanedesktop</frontName>
+                </args>
+            </sarbacanedesktop>
+        </routers>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <sarbacanedesktop before="Mage_Adminhtml">Sarbacane_Sarbacanedesktop_Adminhtml</sarbacanedesktop>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <newsletter>
+                <children>
+                    <sarbacanedesktop module="sarbacanedesktop" translate="title">
+                        <title>Sarbacane Desktop</title>
+                        <sort_order>120</sort_order>
+                        <action>adminhtml/sarbacanedesktop</action>
+                    </sarbacanedesktop>
+                </children>
+            </newsletter>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <newsletter>
+                            <children>
+                                <sarbacanedesktop translate="title">
+                                    <title>Sarbacane Desktop</title>
+                                    <sort_order>120</sort_order>
+                                </sarbacanedesktop>
+                            </children>
+                        </newsletter>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <sarbacanedesktop>
+                    <file>sarbacanedesktop.xml</file>
+                </sarbacanedesktop>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Sarbacane_Sarbacanedesktop>
+                    <files>
+                        <default>Sarbacane_Sarbacanedesktop.csv</default>
+                    </files>
+                </Sarbacane_Sarbacanedesktop>
+            </modules>
+        </translate>
+    </adminhtml>
+    <global>
+        <events>
+            <customer_save_before>
+                <observers>
+                    <sarbacanedesktop_customer_save>
+                        <class>Sarbacane_Sarbacanedesktop_Model_Observer</class>
+                        <method>customerSave</method>
+                    </sarbacanedesktop_customer_save>
+                </observers>
+            </customer_save_before>
+            <customer_delete_before>
+                <observers>
+                    <sarbacanedesktop_customer_delete>
+                        <class>Sarbacane_Sarbacanedesktop_Model_Observer</class>
+                        <method>customerDelete</method>
+                    </sarbacanedesktop_customer_delete>
+                </observers>
+            </customer_delete_before>
+            <newsletter_subscriber_save_before>
+                <observers>
+                    <sarbacanedesktop_newsletter_subscriber_save>
+                        <class>Sarbacane_Sarbacanedesktop_Model_Observer</class>
+                        <method>newsletterSubscriberSave</method>
+                    </sarbacanedesktop_newsletter_subscriber_save>
+                </observers>
+            </newsletter_subscriber_save_before>
+            <newsletter_subscriber_delete_before>
+                <observers>
+                    <sarbacanedesktop_newsletter_subscriber_delete>
+                        <class>Sarbacane_Sarbacanedesktop_Model_Observer</class>
+                        <method>newsletterSubscriberDelete</method>
+                    </sarbacanedesktop_newsletter_subscriber_delete>
+                </observers>
+            </newsletter_subscriber_delete_before>
+        </events>
+        <helpers>
+            <sarbacanedesktop>
+                <class>Sarbacane_Sarbacanedesktop_Helper</class>
+            </sarbacanedesktop>
+        </helpers>
+        <blocks>
+            <sarbacanedesktop>
+                <class>Sarbacane_Sarbacanedesktop_Block</class>
+            </sarbacanedesktop>
+        </blocks>
+        <resources>
+            <sarbacanedesktop_setup>
+                <setup>
+                    <module>Sarbacane_Sarbacanedesktop</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </sarbacanedesktop_setup>
+            <sarbacanedesktop_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </sarbacanedesktop_write>
+            <sarbacanedesktop_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </sarbacanedesktop_read>
+        </resources>
+    </global>
+</config>

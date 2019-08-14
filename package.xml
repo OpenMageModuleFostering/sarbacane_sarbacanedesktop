@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<package>
+    <name>Sarbacane_Sarbacanedesktop</name>
+    <version>1.0.0.9</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/academic.php">AFL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The extension synchronizes your e-shop Magento and the emailing solution software Sarbacane Desktop</summary>
+    <description>&lt;i&gt;With Sarbacane Desktop, easily create and send stunning newsletters to inform your community and increase customer loyalty.&lt;/i&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;h2&gt;Merchant Benefits&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Easy : &lt;/b&gt;Simply create beautiful responsive newsletters thanks to the EmailBuilder&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Optimal deliverability : &lt;/b&gt;Your customers really receive your emails&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Advanced Features : &lt;/b&gt;Targeting, segmentation, Split test...&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Support : &lt;/b&gt;Technical support available to help you and many online resources: videos, tutorials, guides, tips, etc.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h2&gt;Features&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;Sarbacane Desktop is a complete solution for emailing, &lt;b&gt;affordable for begginners and complete for experts.&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Store data synchronized in real time, no need to export manually&lt;/li&gt;&#xD;
+&lt;li&gt;Hundreds of free responsive templates to use and customize in the new EmailBuilder. &lt;b&gt;You create your email in a few clicks ! &lt;/b&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;Deliverability optimized through our routing  platform known to all Internet service providers and Webmails.&lt;/li&gt;&#xD;
+&lt;li&gt;A / B testing, programmable emailing, 1-click preview in more than 20 email clients.&lt;/li&gt;&#xD;
+&lt;li&gt;Every element of your message is customizable with the data of your contact database: name, address, city, etc.&lt;/li&gt;&#xD;
+&lt;li&gt;Ability to target contacts according to their orders data for more effective campaigns&lt;/li&gt;&#xD;
+&lt;li&gt;Detailed statistics, geolocation, detection of openings, opening time, clicks, type of messaging, churn, incorrect addresses, etc.&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;hr /&gt;&#xD;
+&lt;i&gt;Avec Sarbacane Desktop, cr&#xE9;ez et envoyez simplement de superbes newsletters pour informer et fid&#xE9;liser vos clients.&lt;/i&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;h2&gt;Les &amp;quot;+&amp;quot; pour vous&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Simplicit&#xE9; : &lt;/b&gt;Cr&#xE9;ez simplement de superbes newsletters responsive gr&#xE2;ce &#xE0; l'EmailBuilder.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;D&#xE9;livrabilit&#xE9; optimale : &lt;/b&gt;Vos clients re&#xE7;oivent vraiment vos emails.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Fonctionnalit&#xE9;s avanc&#xE9;es : &lt;/b&gt;ciblage, segmentation, Split test etc.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Accompagnement : &lt;/b&gt;Un support technique &#xE0; votre &#xE9;coute et de nombreuses ressources en ligne : vid&#xE9;os, tutoriels, guides, conseils ...&lt;/p&gt;&#xD;
+&#xD;
+&lt;h2&gt;Fonctionnalit&#xE9;s&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;Sarbacane Desktop est une solution compl&#xE8;te pour l'emailing, &lt;b&gt;abordable pour les d&#xE9;butants et compl&#xE8;te pour les experts.&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Donn&#xE9;es de boutique synchronis&#xE9;es en temps r&#xE9;el, pas besoin d'exporter manuellement.&lt;/li&gt;&#xD;
+&lt;li&gt;Des centaines de mod&#xE8;les responsives gratuits &#xE0; utiliser et personnaliser dans l'EmailBuilder nouvelle g&#xE9;n&#xE9;ration. &lt;b&gt;Vous cr&#xE9;ez votre email en quelques clics ! &lt;/b&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;D&#xE9;livrabilit&#xE9; optimis&#xE9;e gr&#xE2;ce &#xE0; notre plateforme de routage reconnue aupr&#xE8;s de l'ensemble des fournisseurs d'acc&#xE8;s Internet et grands webmails.&lt;/li&gt;&#xD;
+&lt;li&gt;Tests A/B, envois programmables, pr&#xE9;visualisation dans plus de 20 messageries en 1 clic.&lt;/li&gt;&#xD;
+&lt;li&gt;Chaque &#xE9;l&#xE9;ment de votre message est personnalisable avec les donn&#xE9;es pr&#xE9;sentes dans votre base de contacts : pr&#xE9;nom, nom, ville, ...&lt;/li&gt;&#xD;
+&lt;li&gt;Possibilit&#xE9; de cibler et exploiter les contacts en fonction de leurs donn&#xE9;es de commandes pour des campagnes plus efficaces&lt;/li&gt;&#xD;
+&lt;li&gt;Statistiques d&#xE9;taill&#xE9;es, g&#xE9;olocalisation, d&#xE9;tection des ouvertures, temps d'ouvertures, clics, type de messageries, d&#xE9;sabonnements, adresses erronn&#xE9;es, etc.&lt;/li&gt;&#xD;
+&lt;/ul&gt;</description>
+    <notes>We improved performance on synchronization.&#xD;
+It should be more efficient and nearly instant on most websites.</notes>
+    <authors><author><name>Sarbacane Software</name><user>sarbacane</user><email>connectors@sarbacane.com</email></author></authors>
+    <date>2017-06-28</date>
+    <time>14:20:00</time>
+    <contents><target name="magecommunity"><dir name="Sarbacane"><dir name="Sarbacanedesktop"><dir name="Block"><dir name="Adminhtml"><file name="Sarbacanedesktop.php" hash="37acc8335d82b2312609121c7ba7c3aa"/></dir></dir><dir name="Helper"><file name="Data.php" hash="fef9ce9208336fd6ac8ae05b6bcd005b"/></dir><dir name="Model"><file name="Observer.php" hash="9b16a9af99bda0a4d9dbe5e5cf8596db"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="SarbacanedesktopController.php" hash="77c4913fb7316ec621907b28ba58dff0"/></dir><file name="IndexController.php" hash="4df0bb5fd29de1e2ef337fe5dd22bbe3"/></dir><dir name="etc"><file name="config.xml" hash="77537c85b83b1acc510d48e2925f52a5"/></dir><dir name="sql"><dir name="sarbacanedesktop_setup"><file name="mysql4-upgrade-1.0.0.7-1.0.0.8.php" hash="27721deaf97fd972aa8540d4bfbb41ba"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><file name="sarbacanedesktop.css" hash="5cfd44b2883bede9f389f195dc65e6ff"/><dir name="images"><file name="sarbacanedesktop.png" hash="2038d3c503e8f59d14177a131bef7537"/></dir><file name="sarbacanedesktop.js" hash="15096b017322b4141926f7469600586c"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="sarbacanedesktop.xml" hash="8dbeb59dbc0a5d5a86256880a77b0189"/></dir><dir name="template"><dir name="sarbacanedesktop"><file name="sarbacanedesktop.phtml" hash="145cb3eafd17a8fc6c181ec33c0b0d7a"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sarbacane_Sarbacanedesktop.xml" hash="2ad128064122d112a5b087c0967399d6"/></dir></target><target name="magelocale"><dir name="fr_FR"><file name="Sarbacane_Sarbacanedesktop.csv" hash="3468b7d20d57c6a5d3d2ffa505f347f0"/></dir><dir name="en_US"><file name="Sarbacane_Sarbacanedesktop.csv" hash="ae45c5263eafa7057e1a4bb84ae55091"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>8.0.0</max></php></required></dependencies>
+</package>

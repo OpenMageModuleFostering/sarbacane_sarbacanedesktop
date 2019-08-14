@@ -1,0 +1,282 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    Sarbacane
+ * @package     Sarbacane_Sarbacanedesktop
+ * @author      Sarbacane Software <contact@sarbacane.com>
+ * @copyright   2015 Sarbacane Software
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+$key_for_synchronisation = $this->getKeyForSynchronisation();
+$check_failed = $this->getCheckFailed();
+$list_configuration = $this->getListConfiguration();
+$general_configuration = $this->getGeneralConfiguration();
+$sd_is_user = $this->getSdIsUser();
+$displayed_step = $this->getDisplayedStep();
+$shops_array = $this->getShopsArray();
+?>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('sarbacanedesktop.css') ?>"/>
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('sarbacanedesktop.js') ?>"></script>
+<div id="sarbacanedesktop">
+    <div class="sd_header">
+        <div class="sd_logo_<?php echo $this->__('sarbacane') ?>"></div>
+    </div>
+    <p class="sd_title"><?php echo $this->__('It\'s easy to manage your newsletter and email campaigns') ?></p>
+    <div class="sd_title_separator_page"></div>
+    <div class="sd_video_config_container">
+        <div class="sd_video_container">
+            <iframe width="565" height="315" src="<?php echo $this->__('https://www.youtube.com/embed/eLMy2tSSYgE') ?>?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="sd_config_container">
+            <p><?php echo $this->__('This Magento module enables you to synchronize clients and accounts that have subscribed to your newsletter from your shop online using Sarbacane Desktop\'s email marketing software.') ?></p>
+            <p>
+                <input type="button" onclick="sdDisplaySteps()" class="sd_config_button" value="<?php echo $this->__('Begin the set-up') ?>"/>
+            </p>
+        </div>
+    </div>
+    <div class="sd_separator"></div>
+    <div class="sd_detail_description_container">
+        <div>
+            <div>
+                <div>
+                    <div class="sd_picto1"></div>
+                    <p class="sd_long_subtitle"><?php echo $this->__('Synchronization of your shop data') ?></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="sd_picto2"></div>
+                    <p class="sd_long_subtitle"><?php echo $this->__('Responsive visual editor') ?></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="sd_picto3"></div>
+                    <p class="sd_short_subtitle"><?php echo $this->__('Detailed statistics') ?></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="sd_picto4"></div>
+                    <p class="sd_short_subtitle"><?php echo $this->__('Optimal deliverability') ?></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div class="sd_subtitle_separator"></div>
+                    <p><?php echo $this->__('Synchronize and manage all the email lists from your Magento store') ?></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="sd_subtitle_separator"></div>
+                    <p><?php echo $this->__('NEW! Create awesome, responsive newsletters thanks to the EmailBuilder') ?></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="sd_subtitle_separator"></div>
+                    <p><?php echo $this->__('Geolocation, openings, opening time, clicks, opt-outs...') ?></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="sd_subtitle_separator"></div>
+                    <p><?php echo $this->__('Optimal deliverability thanks to our renowned professional routing platform') ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sd_separator"></div>
+    <div class="sd_account_offer_container">
+        <p class="sd_account"><?php echo $this->__('Create your account for free and start sending emails') ?></p>
+        <p class="sd_offer"><?php echo $this->__('No strings attached') ?></p>
+        <div class="sd_title_separator_account_offer"></div>
+    </div>
+    <div class="sd_info_container">
+        <div class="sd_info_container_left">
+            <div>
+                <p class="sd_info_title"><?php echo $this->__('Why choose Sarbacane?') ?></p>
+                <div>
+                    <p><?php echo $this->__('Create your account for free and start sending emails') ?></p>
+                    <p><?php echo $this->__('Trusted by over 20,000 users worldwide') ?></p>
+                    <p><?php echo $this->__('Awarded Best Emailing Solution by Bsoco Awards (an index that compares emailing solutions)') ?></p>
+                    <p><?php echo $this->__('All you need to succeed: design, customize, send, and follow-up on your campaigns') ?></p>
+                    <p><?php echo $this->__('A tech heldpdesk and a variety of resources to help: videos, tutorials, manuals, tips...') ?></p>
+                </div>
+            </div>
+        </div>
+        <div class="sd_info_container_right">
+            <div>
+                <p class="sd_info_title"><?php echo $this->__('Need help?') ?></p>
+                <div>
+                    <p><?php echo $this->__('Email:') ?> <?php echo $this->__('support@sarbacane.com') ?></p>
+                    <p><?php echo $this->__('Tel:') ?> <?php echo $this->__('+33(0) 328 328 040') ?></p>
+                    <p>
+                        <?php echo $this->__('Website:') ?>
+                        <a href="<?php echo $this->__('http://www.sarbacane.com/?utm_source=module-magento&utm_medium=plugin&utm_content=lien-sarbacane&utm_campaign=magento') ?>" target="_blank"><?php echo $this->__('http://www.sarbacane.com') ?></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sd_step"></div>
+    <!-- STEP 1 -->
+    <div id="sd_step1" class="sd_step<?php if ($displayed_step == 1) { ?> sd_show_step<?php } ?>">
+        <p class="sd_step_title"><?php echo $this->__('How to set up the module?') ?></p>
+        <div class="sd_step_line"></div>
+        <p class="sd_step1_instruction"><?php echo $this->__('Do you already have a Sarbacane Desktop account?') ?></p>
+        <form autocomplete="off" action="<?php echo Mage::helper('adminhtml')->getUrl("*/*/*/") ?>#sd_step" method="POST">
+            <p class="sd_step1_selection">
+                <span>
+                    <input onclick="sdUserYesNoDisplayButton('yes')" type="radio" id="sd_user_click_yes" name="sd_is_user" value="yes"<?php if ($sd_is_user == "yes") { ?> checked="checked"<?php } ?>/>
+                    <label for="sd_user_click_yes"><?php echo $this->__('Yes') ?></label>
+                </span>
+                <span>
+                    <input onclick="sdUserYesNoDisplayButton('no')" type="radio" id="sd_user_click_no" name="sd_is_user" value="no"<?php if ($sd_is_user == "no") { ?> checked="checked"<?php } ?>/>
+                    <label for="sd_user_click_no"><?php echo $this->__('No') ?></label>
+                </span>
+            </p>
+            <div class="sd_step_buttons">
+                <div class="sd_step_buttons_right">
+                    <input type="hidden" name="submit_is_user" value="1"/>
+                    <input type="hidden" name="form_key" value="<?php echo $this->getFormKey() ?>"/>
+                    <input type="submit" class="sd_button" value="<?php echo $this->__('Next') ?>"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- STEP 2 -->
+    <div id="sd_step2" class="sd_step<?php if ($displayed_step == 2) { ?> sd_show_step<?php } ?>">
+        <div class="sd_step_line"></div>
+        <p class="sd_step2_instruction"><?php echo $this->__('Select your shop and pick your settings') ?></p>
+        <form autocomplete="off" action="<?php echo Mage::helper('adminhtml')->getUrl("*/*/*/") ?>#sd_step" method="POST">
+            <div class="sd_step2_selection">
+                <?php foreach ($shops_array as $shop) { ?>
+                <div class="sd_step2_selection_list">
+                    <p class="sd_step2_selection_shop_title"><?php echo $shop['name'] ?></p>
+                    <div class="sd_step2_selection_shop">
+                        <div class="sd_step2_selection_shop_input">
+                            <?php
+                            $store_value = $shop['store_id'] . 'N0';
+                            $store_checked = $general_configuration < 3 || in_array($shop['store_id'] . 'N0', $list_configuration);
+                            ?>
+                            <input type="checkbox" name="store_id[]" value="<?php echo $store_value ?>"<?php if ($store_checked) { ?> checked="checked"<?php } ?>/>
+                        </div>
+                        <div class="sd_step2_selection_shop_text">
+                            <?php echo $this->__('Create a list in Sarbacane Desktop with newsletter opt-ins') ?>
+                        </div>
+                    </div>
+                    <div class="sd_step2_selection_shop">
+                        <div class="sd_step2_selection_shop_input">
+                            <?php
+                            $store_value = '';
+                            $store_checked = false;
+                            $store_with_customer_data = false;
+                            if (in_array($shop['store_id'] . 'C1', $list_configuration)) {
+                                $store_value = $shop['store_id'] . 'C1';
+                                $store_with_customer_data = true;
+                                $store_checked = true;
+                            } else if ($general_configuration < 3 || in_array($shop['store_id'] . 'C0', $list_configuration)) {
+                                $store_value = $shop['store_id'] . 'C0';
+                                $store_checked = true;
+                            }
+                            ?>
+                            <input id="id_shop_<?php echo $shop['store_id'] ?>C" type="checkbox" name="store_id[]" onclick="changeOptionOrdersDataDisplay('<?php echo $shop['store_id'] ?>C', this.checked)" value="<?php echo $store_value ?>"<?php if ($store_checked) { ?> checked="checked"<?php } ?>/>
+                        </div>
+                        <div class="sd_step2_selection_shop_text">
+                            <?php echo $this->__('Create a list in Sarbacane Desktop with your clients who have an account or who have placed an order online') ?>
+                        </div>
+                    </div>
+                    <div class="sd_step2_selection_shop_option<?php if ($shop['store_id'] == '0') { ?> sd_hidden<?php } ?>">
+                        <div class="sd_step2_selection_shop_input">
+                            <input id="customer_data_<?php echo $shop['store_id'] ?>C" type="checkbox" onclick="changeOptionOrdersData('<?php echo $shop['store_id'] ?>C', this.checked)" <?php if ($store_with_customer_data) { ?>checked="checked"<?php } ?>/>
+                        </div>
+                        <div class="sd_step2_selection_shop_text">
+                            <?php echo $this->__('Add order data (date, amount, etc...)') ?>
+                        </div>
+                        <div onclick="sdInfoDataOrdersClick('<?php echo $shop['store_id'] ?>C')" onmouseover="sdInfoDataOrdersHover('<?php echo $shop['store_id'] ?>C')" onmouseout="sdInfoDataOrdersOut('<?php echo $shop['store_id'] ?>C')" class="sd_step2_info"></div>
+                    </div>
+                </div>
+                <div id="sd_tooltip_<?php echo $shop['store_id'] ?>C" class="sd_tooltip">
+                    <div>
+                        <?php echo $this->__('As you enable data from orders, you can also gather extra info in your contact list, and target your recipients in Sarbacane Desktop.') ?>
+                        <br/><?php echo $this->__('Below are pieces of information that will be added to your contact list:') ?>
+                        <br/><?php echo $this->__('- Date of first order') ?>
+                        <br/><?php echo $this->__('- Date of latest order') ?>
+                        <br/><?php echo $this->__('- Total number of orders') ?>
+                        <br/><?php echo $this->__('- Total amount of orders') ?>
+                        <br/><?php echo $this->__('- Amount of the cheapest order') ?>
+                        <br/><?php echo $this->__('- Amount of the most expensive order') ?>
+                        <br/><?php echo $this->__('- Average amount of the orders placed') ?>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+            <div class="sd_step_buttons">
+                <div class="sd_step_buttons_left">
+                    <input type="button" onclick="sdDisplayStep(1)" value="<?php echo $this->__('Previous') ?>"/>
+                </div>
+                <div class="sd_step_buttons_right">
+                    <input type="hidden" name="submit_configuration" value="1"/>
+                    <input type="hidden" name="submit_is_user" value="<?php echo $this->getIsUser() ?>"/>
+                    <input type="hidden" name="form_key" value="<?php echo $this->getFormKey() ?>"/>
+                    <input type="submit" class="sd_button" value="<?php echo $this->__('Next') ?>"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- STEP 3 -->
+    <div id="sd_step3" class="sd_step<?php if ($displayed_step == 3) { ?> sd_show_step<?php } ?>">
+        <div class="sd_step_line"></div>
+        <div class="sd_step3_instruction">
+            <?php if ($sd_is_user == "yes") { ?>
+            <p>1/ <a href="<?php echo $this->__('https://www.sarbacane.com/ws/soft-redirect.asp?key=heXmrxBEUO&com=MagentoInfo') ?>" target="_blank"><?php echo $this->__('Download and install Sarbacane') ?></a></p>
+            <p>2/ <?php echo $this->__('Create your free account') ?></p>
+            <p>3/ <?php echo $this->__('Enable the Magento extension in our extensions menu, and then fill in the following fields:') ?></p>
+            <?php } else if ($sd_is_user == "no") { ?>
+            <p><?php echo $this->__('Enable the Magento extension in our extensions menu, and then fill in the following fields:') ?></p>
+            <?php } ?>
+            <form autocomplete="off" action="<?php echo Mage::helper('adminhtml')->getUrl("*/*/*/") ?>#sd_step" method="POST">
+                <div class="sd_key_container">
+                    <p><?php echo $this->__('Url') ?></p>
+                    <input value="<?php echo Mage::getBaseUrl() ?>" onclick="this.select()" type="text" readonly/>
+                </div>
+                <div class="sd_key_container">
+                    <p><?php echo $this->__('Key') ?></p>
+                    <?php if ( ! $check_failed) { ?>
+                    <input value="<?php echo $key_for_synchronisation ?>" onclick="this.select()" type="text" readonly/>
+                    <?php } else { ?>
+                    <span><?php echo $this->__('Please generate a new key') ?></span>
+                    <?php } ?>
+                </div>
+                <p class="sd_key_button_container">
+                    <input type="hidden" name="submit_parameter_key" value="1"/>
+                    <input type="hidden" name="form_key" value="<?php echo $this->getFormKey() ?>"/>
+                    <input type="submit" class="sd_key_button" value="<?php echo $this->__('Generate a new key') ?>"/>
+                </p>
+            </form>
+        </div>
+        <div class="sd_step_buttons">
+            <div class="sd_step_buttons_left">
+                <input type="button" onclick="sdDisplayStep(2)" value="<?php echo $this->__('Previous') ?>"/>
+            </div>
+            <div class="sd_step3_right">
+                <?php echo $this->__('Read more') ?>, <a href="<?php echo $this->__('http://www.sarbacane.com/faq/extensions/configuration-plugin-magento/?utm_source=module-magento&utm_medium=plugin&utm_content=lien-sarbacane&utm_campaign=magento') ?>" target="_blank"><?php echo $this->__('in the help section online') ?></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Sarbacane_Sarbacanedesktop",
+    "name": "OpenMageModuleFostering\/Sarbacane_Sarbacanedesktop",
     "type": "magento-module",
     "license": "AFL",
     "homepage": "",
     "description": "The extension synchronizes your e-shop Magento and the emailing solution software Sarbacane Desktop",
     "authors": [
-    {
-        "name": "Sarbacane Software",
-        "email": "connectors@sarbacane.com"
-    }
-],
+        {
+            "name": "Sarbacane Software",
+            "email": "connectors@sarbacane.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }

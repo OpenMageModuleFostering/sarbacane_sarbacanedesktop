@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 The extension synchronizes your e-shop Magento and the emailing solution software Sarbacane Desktop
